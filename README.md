@@ -1,5 +1,5 @@
 # PPIDSpoofing
-PPID Spoofing  with reverse shell for privilege scalation when SeDebugPrivilege is enabled
+PPID Spoofing  with reverse shell for privilege escalation when SeDebugPrivilege is enabled
 
 Usage:
 
